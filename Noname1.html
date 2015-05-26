@@ -1,0 +1,110 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> New Document </title>
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <script src="json2.js"></script>
+ <script src="object-js.js"></script> 
+ </head>
+
+ <body>
+  <pre id="content" style="color:#c0c0c0">
+/*
+hello word demo;
+*/
+package www.www;//声明命名空间
+
+import www.www.class1;
+import www.www.class2;
+
+/*
+定义对象
+*/
+class testbase extends class1{
+	public var1 = "a
+	asfd
+	asdf
+	bc";
+	private var2 = "efg";
+	var abcd = x->2*x;
+	var ef,rg;
+	function testbase(var1,var2,var3){
+		alert("hello"+var1);
+	}
+	function testbase1(var1,var2,var3,var4...){
+		alert("hello "+this.var1+var1+var2);
+	}
+	public function funcbase(var1){
+		return this.var1 + "="+var1+"=" + this.func();
+	}
+	public sss = function(x){alert(x);}
+	public function funcbase1(var1,var2){
+		return this.var1 +"="+ var1+"+" +var2+"+"+ this.func();
+	}
+	public function func(){
+		return this.var2;
+	}
+	public function func555(sdf){
+		alert("abcd");
+	}
+	public function func2(sssss){}
+
+	public static function staticfunc(){
+	var s= (b,s)->s+1;
+		alert("ok");
+	}
+}
+
+/*
+定义对象并包含继承
+*/
+class test extends testbase {
+	public function func2(){
+		return this.func();
+	}
+
+	public function func3(){
+		return new class1();
+	}
+}
+
+  </pre>
+  <script>
+  function getDoc(id){
+	  var obj = document.getElementById(id);
+		if(document.all)
+		return obj.innerText;
+		else
+		return obj.textContent;
+  }
+  
+var doc=getDoc("content");
+	tokens = OBJECTJS.scanner(doc);
+	var classes = OBJECTJS.parser(tokens);
+	document.write('<pre>'+JSON.stringify(classes, null,"    ")+'</pre>');
+	OBJECTJS.generator(classes);
+	/*
+	tokens = OBJECTJS.compile(doc);
+	//document.write('<pre>'+JSON.stringify(tokens,null,"    ")+'</pre>');
+	var s = new www.www.test("a","b");
+	//s.sss("sssss");
+	s.func555(function(ss){alert(ss)});
+	www.www.testbase.staticfunc();
+	alert(s.func2());
+*/
+
+
+function abcd(){
+	_arguments = arguments;
+	(
+	function efgh(){
+		alert(_arguments[1]);
+	}());
+}
+abcd("12","34");
+  </script>
+ </body>
+</html>
