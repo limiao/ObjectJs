@@ -1,3 +1,4 @@
+//test
 if (typeof OBJECTJS !== 'object') {
     OBJECTJS = {};
 }
